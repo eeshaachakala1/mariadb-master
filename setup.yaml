@@ -10,3 +10,10 @@ acl:
     user: wordpress
     access: ALL
     
+restore:
+  - database: wordpress
+    source:
+       file: account.sql
+    user: wordpress
+    password: $MYSQL_WORDPRESS_PASSWORD    # password of the 'user' above.
+    token: 20210415-1257   # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN).
