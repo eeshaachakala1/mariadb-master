@@ -5,13 +5,13 @@ app:
 
 build:
     version: 10.4
-    env: DEV
+    env: QA
     build_file: none
     output_files: output/*.zip
     image_template: mariadb_master-10.4
 
 deploy:
-    context: anushab7/DEV
+    context: anushab7/QA
     type: statefulset
     replicas: 1
     port:
