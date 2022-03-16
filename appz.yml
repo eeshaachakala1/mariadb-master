@@ -37,4 +37,5 @@ properties:
       vault: MYSQL_TESTUSER_PASSWORD
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
-    revision : 57
+    revision : 58
+    
