@@ -6,6 +6,7 @@ users:
     
 databases:
   - name: wordpress
+  - name: wordpress2
   
 acl:
   - database: wordpress
@@ -14,3 +15,7 @@ acl:
   - database: wordpress
     access: select,show view
     user: testuser
+  - database: wordpress2
+    access: select,show view
+    user: testuser
+ 
